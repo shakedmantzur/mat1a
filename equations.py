@@ -64,7 +64,7 @@ def XtimesY(x:float,y:float) -> float:
     try:
         if x>0:
             ans=exponent(Ln(x)*y)
-            return float('%0.4f' %ans)
+            return float('%0.6f' %ans)
         else:
             return(0.0)
     except:
@@ -75,7 +75,7 @@ def sqrt(x:float, y:float)-> float:
     if (x!=0 and y>0):
         x=1/x
         num= (XtimesY(y,x))
-        return float('%0.4f' %num)
+        return float('%0.6f' %num)
     else:
         return(0.0)
     
@@ -83,7 +83,7 @@ def sqrt(x:float, y:float)-> float:
 def calculate(x:float)->float:
     try:
         ans=exponent(x)*XtimesY(7,x)*XtimesY(x,-1)*sqrt(x,x)
-        return float('%0.4f' %ans)
+        return float('%0.6f' %ans)
     except:
         return(0.0)    
     
